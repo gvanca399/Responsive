@@ -21,10 +21,40 @@ h3 {
     line-height: 1;
     font-family: var(--ff-accent);
     font-weight: 900;
+    margin-bottom: 1em;
 }
-
+img{
+    max-width: 100%;
+    display: block;
+}
+.text-center {
+    text-align: center;
+}
+header,
 section{
     padding: 3rem 0;
+}
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+.split {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:40em){
+    .split{
+        flex-direction: row;
+    }
+    .split > * {
+        flex-basis: 100%;
+    }
+
+
+
+}
+.container--narrow{
+    max-width: 35rem;
 }
 .bg-light {
     background-color:var(--clr-primary-300);
