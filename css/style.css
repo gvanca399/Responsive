@@ -1,0 +1,43 @@
+:root {
+    --clr-primary-300:#F3EED9;
+    --clr-primary-400: #824936;
+
+    --clr-neutral-100: #FFF;
+    --clr-neutral-900: #222C2A;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Playfair Display', serif;
+}
+body{
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    font-family: var(--ff-accent);
+    font-weight: 900;
+}
+
+section{
+    padding: 3rem 0;
+}
+.bg-light {
+    background-color:var(--clr-primary-300);
+}
+.bg-accent {
+    color: var(--clr-neutral-100);
+    background-color:var(--clr-primary-400);
+}
+.bg-dark{
+    color: var(--clr-neutral-100);
+    background-color:var(--clr-neutral-900);
+}
+.bg-accent h2,
+.bg-dark h2 {
+    color: var(--clr-praimary-200);
+}
